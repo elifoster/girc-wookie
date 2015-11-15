@@ -1,0 +1,17 @@
+github:
+  username: elifoster
+  password: secrets
+  repo: girc-wookie
+
+irc:
+  server: irc.esper.net
+  port: 6667
+  room: \#SatanicSanta, \#TheSteamTank
+  branches: null
+  nickserv_password: null
+  ssl: false
+  no_join: true
+  no_colors: false
+  long_url: false
+  notice: true
+  nick: girc-wookie

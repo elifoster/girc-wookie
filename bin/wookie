@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+path = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(path)
+
+require_relative '../lib/girc/wookie'
+
+usage = 'Usage: wookie [yaml file directory]'
+if ARGV.length < 1
+  puts usage
+  exit
+end
+
+wookie = GIRC::Wookie.new(ARGV[0])
+wookie.run
+
+puts 'Finished.'
+exit
