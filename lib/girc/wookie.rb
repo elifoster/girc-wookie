@@ -26,7 +26,11 @@ module GIRC
         notice: to_int_string(@config['irc']['notice'])
       }
 
-      repo = "#{@config['github']['username']}/#{@config['github']['repo']}"
+      if @config['github']['repo'].include? '/'
+        repo = @config['github']['repo']
+      else
+        repo = "#{@config['github']['username']}/#{@config['github']['repo']}"
+      end
 
       @client.create_hook(repo, 'irc', hook_config)
     end
