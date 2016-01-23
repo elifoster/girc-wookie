@@ -1,5 +1,8 @@
 # Changelog
 ## Version 1
+### Version 1.0.3
+* Update to and require Ruby 2.3
+
 ### Version 1.0.2
 * Reupload version 1.0.1 with tested code.
 

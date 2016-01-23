@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'girc-wookie'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.authors = ['Eli Foster']
   s.description = 'A simple command line utility that adds an IRC web ' \
                   'hook to a GitHub repository configured with a YAML file.'
@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
     'CHANGELOG.md',
     'example.yaml'
   ]
+  s.required_ruby_version = '>= 2.3'
   s.executables = 'wookie'
   s.homepage = 'https://github.com/elifoster/girc-wookie'
   s.summary = 'GitHub-IRC Wookie command line application'

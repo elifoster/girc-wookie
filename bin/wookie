@@ -6,7 +6,7 @@ $LOAD_PATH.unshift(path)
 
 require_relative '../lib/girc/wookie'
 
-usage = 'Usage: wookie [yaml file directory]'
+usage = 'Usage: wookie [yaml file directory]'.freeze
 if ARGV.length < 1
   puts usage
   exit

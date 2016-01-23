@@ -37,6 +37,9 @@ module GIRC
 
     private
 
+    # Returns an integer string representing a boolean value.
+    # @param boolean [Boolean]
+    # @return [String] '1' if boolean is true, '0' if it is false.
     def to_int_string(boolean)
       return '1' if boolean
       return '0' unless boolean
