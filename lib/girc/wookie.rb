@@ -3,13 +3,21 @@ require 'yaml'
 
 module GIRC
   class Wookie
+    # @return [Hash] The hash representation of the YAML config passed in the constructor.
+    attr_reader :config
+
     def initialize(yamlfile)
       @config = YAML.load_file(yamlfile)
     end
 
     def run
-      @client = Octokit::Client.new(login: @config['github']['username'],
-                                    password: @config['github']['password'])
+      if @config['github'].key?('auth_code')
+        @client = Octokit::Client.new(access_token: @config['github']['auth_code'])
+        @client.user.login
+      else
+        @client = Octokit::Client.new(login: @config['github']['username'],
+                                      password: @config['github']['password'])
+      end
 
       rooms = @config['irc']['room'].gsub('\\', '')
       hook_config = {
@@ -41,8 +49,7 @@ module GIRC
     # @param boolean [Boolean]
     # @return [String] '1' if boolean is true, '0' if it is false.
     def to_int_string(boolean)
-      return '1' if boolean
-      return '0' unless boolean
+      boolean ? '1' : '0'
     end
   end
 end

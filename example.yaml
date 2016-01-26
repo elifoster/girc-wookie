@@ -2,6 +2,7 @@ github:
   username: elifoster
   password: secrets
   repo: girc-wookie
+  auth_code: moresecrets
 
 irc:
   server: irc.esper.net
