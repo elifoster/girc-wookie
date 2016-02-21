@@ -1,4 +1,6 @@
 # girc-wookie
+[![Gem Version](https://badge.fury.io/rb/girc-wookie.svg)](https://badge.fury.io/rb/girc-wookie)
+
 Quickly adding an IRC web service to a GitHub repository
 
 I made this small project to solve a very minor issue in my development projects. I often found myself forgetting to add the IRC webhook to my projects, or not wanting to take the time to do it.
