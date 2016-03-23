@@ -1,10 +1,11 @@
 Gem::Specification.new do |s|
   s.name = 'girc-wookie'
-  s.version = '1.1.0'
+  s.version = '1.1.1'
   s.authors = ['Eli Foster']
   s.description = 'A simple command line utility that adds an IRC web ' \
                   'hook to a GitHub repository configured with a YAML file.'
   s.email = 'elifosterwy@gmail.com'
+  s.license = 'MIT'
   s.files = [
     'bin/wookie',
     'lib/girc/wookie.rb',

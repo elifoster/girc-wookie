@@ -1,5 +1,8 @@
 # Changelog
 ## Version 1
+### Version 1.1.1
+* License as MIT
+
 ### Version 1.1.0
 * Authentication with access tokens is possible. If you use 2 factor auth, you will have to use this otherwise it will error.
 
