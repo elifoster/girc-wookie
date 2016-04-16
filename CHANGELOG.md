@@ -1,5 +1,8 @@
 # Changelog
 ## Version 1
+### Version 1.1.2
+* Bump octokit version and use pessimistic version requirements.
+
 ### Version 1.1.1
 * License as MIT
 
